@@ -11,3 +11,11 @@ print("Введите вашу фамилию:")
 surname = input()
 print('Привет, ',name,surname,'!')
 #Задание 3
+print("Меню:\n 1. Суп\n 2. Паста\n 3. Десерт")
+#Задание 4
+print("***\n***\n***\n")
+#Задание 5
+x = int(input("Число: "))
+print(x-3,x-2,x-1)
+print(x)
+print(x+3,x+2,x+1)
