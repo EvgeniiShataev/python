@@ -59,3 +59,39 @@ elif a == "b2" or a == "b6" or a == "c2" or a == "c10" or a == "c7" or a == "c11
     print("В данном квадрате обитает зелёный попугай")
 else:
     print("Квадрат пустой")
+#Задание 7
+n = int(input("Введите первое число: "))
+k = int(input("Введите второе число: "))
+if n % k == 0:
+    print("Все гуд")
+else:
+    print("Все не гуд")
+#Задание 8
+lvl = int(input("Введите ваш уровень: "))
+hp = int(input("Введите ваше здоровье: "))
+
+if lvl < 5:
+    print("Ваш уровень слишком низкий для выполнения миссии.")
+elif lvl > 5:
+    if hp > 50:
+        print("Вы готовы к миссии!")
+    elif 20 <= hp <= 50:
+        print("Ваше здоровье низкое будьте осторожны.")
+    elif hp < 20:
+        print("Ваше здоровье слишком низкое для выполнения миссии.")
+    else:
+        print("Некорректные данные.")
+#Задание 9
+inventory = ["яблоко", "шариковая ручка"]
+missing_items = []
+if "ключ" not in inventory:
+    missing_items.append("ключ")
+elif "фонарь" not in inventory:
+    missing_items.append("фонарь")
+elif len(missing_items) > 0:
+    print("Не хватает предметов для прохождения: "+", " .join(missing_items))
+else:
+    print("Проходите")
+
+
+    
